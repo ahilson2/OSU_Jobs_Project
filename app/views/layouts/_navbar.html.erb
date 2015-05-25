@@ -1,0 +1,24 @@
+<div id="nav_bar" class="container">
+  <div class="nav_btn">
+    <%= button_to 'Home', root_path, method: :get %>
+  </div>
+  <div class="nav_btn">
+    <%= button_to 'Search Jobs', jobs_path, method: :get %>
+  </div>
+  <% if user_signed_in? %>
+    <div class="nav_btn">
+      <%= button_to 'Show Bookmarked Jobs', bookmarks_path, method: :get %>
+    </div>
+    <div class="nav_btn">
+      <%= button_to 'Manage Email Notifications', notifications_path, method: :get %>
+    </div>
+  <% end %>
+ 
+  <div id="login" class="nav_btn">
+    <% if user_signed_in? %>
+      <%= button_to 'Logout',destroy_user_session_path, method: :delete %>
+    <% else %>
+      <%= button_to 'Login', new_user_session_path, method: :get %>
+    <% end %>
+  </div> 
+</div>

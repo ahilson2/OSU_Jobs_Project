@@ -1,0 +1,566 @@
+/* line 1, /home/art/osu_job/hilson_application/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /home/art/osu_job/hilson_application/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /home/art/osu_job/hilson_application/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /home/art/osu_job/hilson_application/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 23, /home/art/osu_job/hilson_application/app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 26, /home/art/osu_job/hilson_application/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 33, /home/art/osu_job/hilson_application/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 38, /home/art/osu_job/hilson_application/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 42, /home/art/osu_job/hilson_application/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 48, /home/art/osu_job/hilson_application/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 55, /home/art/osu_job/hilson_application/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 65, /home/art/osu_job/hilson_application/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+ */
+
+
+.row {
+	display: table-row;
+}
+.cell {
+	display: table-cell;
+}
+#login {
+	right: 10px;
+}
+/*
+ * Skin Name: Rambling Slider Default Theme
+ * Skin Type: flexible
+ * Description: The default skin for the Rambling Slider.
+ * Version: 1.0
+ * Author: Edgar Gonzalez (originally by Gilbert Pellegrom)
+ * Author URI: http://ramblinglabs.com
+ */
+/* line 12, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/default.css.scss */
+.theme-default .ramblingSlider {
+  position: relative;
+  background: white url(/assets/themes/default/loading.gif) no-repeat 50% 50%;
+  margin-bottom: 50px;
+  box-shadow: 0px 1px 5px 0px #4a4a4a;
+}
+/* line 20, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/default.css.scss */
+.theme-default .ramblingSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+/* line 27, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/default.css.scss */
+.theme-default .ramblingSlider a {
+  border: 0;
+  display: block;
+}
+/* line 32, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/default.css.scss */
+.theme-default .ramblingSlider .rambling-controlNav {
+  position: absolute;
+  left: 50%;
+  bottom: -42px;
+  margin-left: -40px;
+  /* Tweak this to center bullets */
+}
+/* line 38, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/default.css.scss */
+.theme-default .ramblingSlider .rambling-controlNav a {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url(/assets/themes/default/bullets.png) no-repeat;
+  text-indent: -9999px;
+  border: 0;
+  margin-right: 3px;
+  float: left;
+}
+/* line 47, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/default.css.scss */
+.theme-default .ramblingSlider .rambling-controlNav a.active {
+  background-position: 0 -22px;
+}
+/* line 53, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/default.css.scss */
+.theme-default .ramblingSlider .rambling-directionNav a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(/assets/themes/default/arrows.png) no-repeat;
+  text-indent: -9999px;
+  border: 0;
+}
+/* line 62, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/default.css.scss */
+.theme-default .ramblingSlider a.rambling-nextNav {
+  background-position: -30px 0;
+  right: 15px;
+}
+/* line 67, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/default.css.scss */
+.theme-default .ramblingSlider a.rambling-prevNav {
+  left: 15px;
+}
+/* line 71, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/default.css.scss */
+.theme-default .ramblingSlider .rambling-caption {
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 74, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/default.css.scss */
+.theme-default .ramblingSlider .rambling-caption a {
+  color: #ffffff;
+  border-bottom: 1px dotted #ffffff;
+}
+/* line 78, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/default.css.scss */
+.theme-default .ramblingSlider .rambling-caption a:hover {
+  color: #ffffff;
+}
+/*
+ * Skin Name: Orman Theme
+ * Skin Type: fixed
+ * Image Width: 568
+ * Image Height: 268
+ * Description: A light and green skin for the Nivo Slider.
+ * Version: 1.0
+ * Author: Edgar Gonzalez (originally by Gilbert Pellegrom & Orman Clark)
+ * Author URI: http://ramblinglabs.com
+ */
+/* line 13, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/orman.css.scss */
+.theme-orman.slider-wrapper {
+  background: url(/assets/themes/orman/slider.png) no-repeat;
+  width: 722px;
+  height: 337px;
+  margin: 0 auto;
+  padding-top: 18px;
+  position: relative;
+}
+
+/* line 23, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/orman.css.scss */
+.theme-orman .ramblingSlider {
+  position: relative;
+  width: 568px;
+  height: 268px;
+  margin-left: 77px;
+  background: url(/assets/themes/orman/loading.gif) no-repeat 50% 50%;
+}
+/* line 30, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/orman.css.scss */
+.theme-orman .ramblingSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+  width: 568px;
+  height: 268px;
+}
+/* line 39, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/orman.css.scss */
+.theme-orman .ramblingSlider a {
+  border: 0;
+  display: block;
+}
+/* line 44, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/orman.css.scss */
+.theme-orman .ramblingSlider .rambling-controlNav {
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+  margin-left: -30px;
+}
+/* line 50, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/orman.css.scss */
+.theme-orman .ramblingSlider .rambling-controlNav a {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: url(/assets/themes/orman/bullets.png) no-repeat;
+  text-indent: -9999px;
+  border: 0;
+  margin-right: 7px;
+  float: left;
+}
+/* line 60, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/orman.css.scss */
+.theme-orman .ramblingSlider .rambling-controlNav a.active {
+  background-position: 0 -10px;
+}
+/* line 66, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/orman.css.scss */
+.theme-orman .ramblingSlider .rambling-directionNav a {
+  display: block;
+  width: 25px;
+  height: 200px;
+  background: url(/assets/themes/orman/arrows.png) no-repeat 0% 50%;
+  text-indent: -9999px;
+  border: 0;
+  top: 40px;
+}
+/* line 76, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/orman.css.scss */
+.theme-orman .ramblingSlider a.rambling-nextNav {
+  background-position: 100% 50%;
+  right: -40px;
+  padding-right: 20px;
+}
+/* line 82, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/orman.css.scss */
+.theme-orman .ramblingSlider a.rambling-prevNav {
+  left: -40px;
+  padding-left: 20px;
+}
+/* line 87, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/orman.css.scss */
+.theme-orman .ramblingSlider .rambling-caption {
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 90, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/orman.css.scss */
+.theme-orman .ramblingSlider .rambling-caption a {
+  color: #ffffff;
+  border-bottom: 1px dotted #ffffff;
+}
+/* line 94, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/orman.css.scss */
+.theme-orman .ramblingSlider .rambling-caption a:hover {
+  color: #ffffff;
+}
+/* line 101, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/orman.css.scss */
+.theme-orman .ribbon {
+  background: url(/assets/themes/orman/ribbon.png) no-repeat;
+  width: 111px;
+  height: 111px;
+  position: absolute;
+  top: -3px;
+  left: 56px;
+  z-index: 300;
+}
+/*
+ * Skin Name: Pascal Theme
+ * Skin Type: fixed
+ * Image Width: 630
+ * Image Height: 235
+ * Description: A nice, light skin for the Nivo Slider.
+ * Version: 1.0
+ * Author: Edgar Gonzalez (originally by Gilbert Pellegrom & Pascal Gartner)
+ * Author URI: http://dev7studios.com
+ */
+/* line 13, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/pascal.css.scss */
+.theme-pascal.slider-wrapper {
+  background: url(/assets/themes/pascal/slider.png) no-repeat;
+  width: 668px;
+  height: 299px;
+  margin: 0 auto;
+  padding-top: 17px;
+  position: relative;
+}
+
+/* line 23, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/pascal.css.scss */
+.theme-pascal .ramblingSlider {
+  position: relative;
+  width: 630px;
+  height: 235px;
+  margin-left: 19px;
+  background: url(/assets/themes/pascal/loading.gif) no-repeat 50% 50%;
+}
+/* line 30, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/pascal.css.scss */
+.theme-pascal .ramblingSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+  width: 630px;
+  /* Make sure your images are the same size */
+  height: 235px;
+  /* Make sure your images are the same size */
+}
+/* line 39, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/pascal.css.scss */
+.theme-pascal .ramblingSlider a {
+  border: 0;
+  display: block;
+}
+/* line 44, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/pascal.css.scss */
+.theme-pascal .ramblingSlider .rambling-controlNav {
+  background: url(/assets/themes/pascal/controlnav.png) no-repeat;
+  width: 251px;
+  height: 40px;
+  position: absolute;
+  left: 200px;
+  /* Tweak this to center bullets */
+  bottom: -42px;
+  padding: 8px 0 0 82px;
+  z-index: 20;
+}
+/* line 54, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/pascal.css.scss */
+.theme-pascal .ramblingSlider .rambling-controlNav a {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url(/assets/themes/pascal/bullets.png) no-repeat;
+  text-indent: -9999px;
+  border: 0;
+  margin-right: 3px;
+  float: left;
+}
+/* line 64, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/pascal.css.scss */
+.theme-pascal .ramblingSlider .rambling-controlNav a.active {
+  background-position: 0 -22px;
+}
+/* line 70, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/pascal.css.scss */
+.theme-pascal .ramblingSlider .rambling-directionNav a {
+  display: none;
+}
+/* line 74, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/pascal.css.scss */
+.theme-pascal .ramblingSlider .rambling-caption {
+  bottom: 40%;
+  left: auto;
+  right: 0px;
+  width: auto;
+  max-width: 630px;
+  overflow: hidden;
+  background: #fff;
+  text-shadow: none;
+  font-family: arial, serif;
+  color: #4c4b4b;
+}
+/* line 86, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/pascal.css.scss */
+.theme-pascal .ramblingSlider .rambling-caption p {
+  padding: 5px 15px;
+  color: #333;
+  font-weight: bold;
+  font-size: 27px;
+  text-transform: uppercase;
+}
+/* line 94, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/pascal.css.scss */
+.theme-pascal .ramblingSlider .rambling-caption a {
+  color: #333;
+  font-weight: bold;
+  font-size: 27px;
+  text-transform: uppercase;
+}
+/* line 103, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider/themes/pascal.css.scss */
+.theme-pascal .ribbon {
+  background: url(/assets/themes/pascal/ribbon.png) no-repeat;
+  width: 111px;
+  height: 111px;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  z-index: 300;
+}
+/*
+ * jQuery Rambling Slider
+ * http://github.com/egonzalez0787/rambling.slider
+ *
+ * Copyright 2011-2012, Rambling Labs
+ * Released under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * January 2012
+ *
+ * Based on jQuery Nivo Slider by Gilbert Pellegrom
+
+ */
+/* line 44, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.ramblingSlider {
+  position: relative img;
+  position-position: absolute;
+  position-top: 0;
+  position-left: 0;
+}
+/* line 50, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.ramblingSlider a.rambling-imageLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+/* line 60, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.ramblingSlider .rambling-slice {
+  position: absolute;
+  display: block;
+  z-index: 5;
+  height: 100%;
+}
+/* line 65, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.ramblingSlider .rambling-box {
+  position: absolute;
+  display: block;
+  z-index: 5;
+}
+/* line 69, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.ramblingSlider .rambling-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #000000;
+  color: #ffffff;
+  opacity: 0.8;
+  width: 100%;
+  z-index: 8;
+}
+/* line 78, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.ramblingSlider p {
+  padding: 5px;
+  margin: 0;
+}
+/* line 83, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.ramblingSlider a {
+  display: inline !important;
+}
+/* line 87, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.ramblingSlider .rambling-directionNav a {
+  position: absolute;
+  top: 45%;
+  z-index: 9;
+  cursor: pointer;
+}
+/* line 94, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.ramblingSlider .rambling-prevNav {
+  left: 0px;
+}
+/* line 98, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.ramblingSlider .rambling-nextNav {
+  right: 0px;
+}
+/* line 102, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.ramblingSlider .rambling-controlNav a {
+  position: relative;
+  z-index: 9;
+  cursor: pointer;
+}
+/* line 107, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.ramblingSlider .rambling-controlNav a.active {
+  font-weight: bold;
+}
+/* line 112, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.ramblingSlider #rambling-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+/* line 117, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.ramblingSlider object {
+  display: none;
+}
+/* line 122, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.ramblingSlider .slideElement,
+.ramblingSlider .slideElement object {
+  display: block;
+}
+
+/* line 127, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.rambling-html-caption {
+  display: none;
+}
+
+/* line 133, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.adaptingSlider .currentSlideElement img,
+.adaptingSlider img.currentSlideElement {
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+/* line 139, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.adaptingSlider img.currentSlideElement.alignBottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: auto;
+  left: auto;
+}
+/* line 146, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.adaptingSlider .rambling-box span, .adaptingSlider .rambling-slice span {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+/* line 152, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.adaptingSlider .rambling-box img, .adaptingSlider .rambling-slice img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 159, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.theme-default #slider {
+  margin: 100px auto 0 auto;
+  width: 618px;
+  height: 246px;
+}
+/* line 164, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.theme-default #slider.adaptingSlider {
+  width: 750px;
+  height: 299px;
+}
+
+/* line 171, /home/art/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/rambling-slider-rails-0.1.1/vendor/assets/stylesheets/jquery.rambling.slider.css.scss */
+.theme-pascal.slider-wrapper,
+.theme-orman.slider-wrapper {
+  margin-top: 150px;
+}

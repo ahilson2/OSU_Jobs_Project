@@ -1,0 +1,89 @@
+README for OSU_Jobs_Project
+
+Written by Arthur Hilson
+Date: 5/25/2015
+
+This a ruby on rails web application that consumes the jobs that are listed at 
+https://www.jobsatosu.com/all_jobs.atom and displays the results for the user 
+to browse. It is designed using mobile first technology so the user can use 
+this application on any range of devices from desktop computers to smart phones. 
+
+This web application is currently deployed on Heroku at:
+http://ahilsonosujob.herokuapp.com/
+
+Application Features:
+
+1) The user can view all of the current job listings found at 
+https://www.jobsatosu.com by clicking the Search Jobs button.
+ 
+2) The user can sort the results by job title or posting department by using 
+the dropdown menu after clicking the Seach Jobs button. The default ordering 
+is by the most recently updated job postings.
+
+3) The user can filter the results by a specific job title or posting department 
+to only see a subset of the total job listings by using the other two dropdown 
+menus after clicking the Search Jobs button.
+
+4) The user can create an account. After an account is created the user then has 
+the option to bookmark jobs that interest them. These bookmarked jobs can be 
+managed by clicking the Show Bookmarked Jobs button.
+
+5) If the user has created an account then they also have the option to select 
+job titles and posting departments that they would like to receive email 
+notifications from if a new job is posted that fit their parameters. This 
+feature is managed by clicking the Manage Email Notifications button. The user 
+has the option to create as many different email notification parameters as they 
+would like. Everyday at midnight this application will check if any new jobs 
+have been posted that fit these parameters and then sends out emails as needed.
+
+Testing:
+
+This web application uses the gems RSpec and Factory Girl to perform unit testing for its 
+controllers and models. The tests can be found in the app/spec directory. To execute all of
+the unit tests run the command "bundle exec rspec" from the root directory of the app. The
+emailing functionality was tested by making a few accounts in the app using real email 
+addresses. I then executed the function that checks for new jobs and then varified that 
+I got the correct job postings in the emails of the different accounts. The gems better_errors
+and binding_of_caller were used to provide better error reports during development.
+
+Design:
+
+Controllers:
+
+1) jobs_controller : Handles retreving the job listings from 
+https://www.jobsatosu.com/all_jobs.atom and showing each job.
+
+2) bookmarks_controller : Manages the users bookmarked jobs.
+
+3) notifications_controller : Manages the users emails notifications.
+
+Models:
+
+1) Job : Handles the sorting of the jobs by title, department, or time updated
+
+2) Bookmark : Manages the CRUD functionality of the users bookmarked jobs and 
+the sorting of the bookmarks. The default ordering is the newest bookmarks 
+are shown first.
+
+3) Notification : Manages the CRUD functionality of the users emails notification 
+parameters. This is where the send_jobs function is located that is responsable 
+for sending the emails out to the users.
+
+4) User : Manages the user authentication and accounts through the gem Devise.
+  
+The use cases that where provided were used to develop the functionality of the 
+application. UML diagrams were used to design the database structure.
+
+References:
+
+The header image was barrowed from https://www.jobsatosu.com/
+The images used in the slider on the home page were barrowed from
+https://www.google.com/search?q=ohio+state&client=ubuntu&hs=R0J&channel=fs&source=lnms&tbm=isch&sa=X&ei=LMpfVaW3IcLsgwTzlIGQDQ&ved=0CAgQ_AUoAg&biw=927&bih=957#channel=fs&tbm=isch&q=ohio+state+campus&revid=1875554182
+
+
+
+
+
+
+
+

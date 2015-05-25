@@ -1,0 +1,24 @@
+<div class="note_top_padding"></div>
+<div class="container job_item">
+  <%= simple_form_for(@notification) do |f| %>
+    <%= f.error_notification %>
+   
+    <div class="container">
+      <div class="left">
+        <h5><strong>Select Job Title</strong></h5>
+        <%= f.select :job_title, @titles %>
+      </div>
+
+      <div class="right">
+        <h5><strong>Select Department</strong></h5>
+        <%= f.select :department, @depts %>
+      </div>
+    </div>
+
+    <div class="form-actions note_top_padding">
+      <%= f.button :submit, 'Create Email Notification' %>
+    </div>
+    <div class="top_pad job_item"></div>
+    
+  <% end %>
+</div>

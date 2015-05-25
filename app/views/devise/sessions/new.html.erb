@@ -1,0 +1,20 @@
+<div class="note_top_padding"></div>
+<div class="container job_item">
+
+  <h2>Log in</h2>
+
+  <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="form-inputs container">
+      <%= f.input :email, required: false, autofocus: true %>
+      <br> 
+      <%= f.input :password, required: false %>
+    </div>
+    
+    <div class="form-actions top_pad">
+      <%= f.button :submit, "Log in" %>
+    </div>
+  <% end %>
+  <br>
+  <%= render "devise/shared/links" %> 
+  <div class="top_pad job_item"></div>
+</div>

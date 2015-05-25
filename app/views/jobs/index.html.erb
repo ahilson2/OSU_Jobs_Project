@@ -1,0 +1,81 @@
+<% if @job.nil? %>
+  <div id="nav_bar" class="container">
+    <hr>
+    <div class="left">
+      <h4>Order of Results: <%= @job_count %>&nbspTotal</h4>
+      <div class="btn-group ">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><%= @order_tag %></button>
+          <ul class="dropdown-menu drop_items" role="menu">    
+            <p><%= link_to 'All Jobs', jobs_path(sort_by: 'all')%></p>
+            <p><%= link_to 'Job Title', jobs_path(sort_by: 'title')%></p>
+            <p><%= link_to 'Posting Department', jobs_path(sort_by: 'dept')%></p>
+          </ul>    
+      </div>
+    </div>
+
+    <div class="right">
+      <h4>Sort by Job Title</h4>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><%= @title_tag %></button>
+          <ul class="dropdown-menu drop_items dropdown_width" role="menu">    
+            <% @titles.each do |t| %>
+              <p><%= link_to t.to_s, jobs_path(title: t)%></p>
+            <% end %>  
+          </ul>    
+      </div>
+    </div>
+
+    <div class="right">
+      <h4>Sort by Posting Department</h4>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><%= @dept_tag %></button>
+          <ul class="dropdown-menu drop_items dropdown_width" role="menu">      
+            <% @depts.each do |d| %>
+              <p><%= link_to d.to_s, jobs_path(dept: d)%></p>
+            <% end %> 
+          </ul>      
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container digg_pagination">
+    <div class="page_pad"><%= will_paginate @jobs %></div>
+  </div>
+  <% @jobs.each do |job| %>
+    <br>
+    <div class="container job_item">
+     
+      <h5><strong>Job Title:</strong>&nbsp<%= link_to job[1][:title], jobs_path(the_job: job[0]) %></h5>
+      <h5><strong>Department:</strong>&nbsp<%= job[1][:department]%></h5>
+      <h5><strong>Published:</strong><%= set_date(job[1][:published]) %></h5>
+      <h5><strong>Updated:</strong><%= set_date(job[1][:updated]) %></h5>
+      <h5><strong>Discription:</strong></h5><p><%= job[1][:content]%></p>
+      <strong class="right bottom_pad"><%= link_to 'Show Full Description', jobs_path(the_job: job[0],page_num: params[:page]) %></strong>
+    </div>
+  <% end %>
+
+   <div class="container digg_pagination">
+    <div class="page_pad"><%= will_paginate @jobs %></div>
+  </div>
+
+<% else %>
+  <% if user_signed_in? %>
+    <div id="nav_bar" class="container">
+      <div class="nav_btn">
+        <h5><strong><%= link_to 'Back', jobs_path(page: params[:page_num]), method: :get %></h5></strong>
+      </div>
+      <div class="nav_btn">
+        <h5><strong><%= link_to 'Bookmark This Job', bookmarks_path(the_job: params[:the_job]), method: :create %></h5></strong>
+      </div>
+    </div>
+  <% end %>
+  <br>
+  <div class="container job_item">    
+    <h5><strong>Job Title:</strong>&nbsp<%= @job[:title] %></h5>
+    <h5><strong>Department:</strong>&nbsp<%= @job[:department]%></h5>
+    <h5><strong>Published:</strong><%= set_date(@job[:published]) %></h5>
+    <h5><strong>Updated:</strong><%= set_date(@job[:updated]) %></h5>
+    <h5><strong>Discription:</strong></h5><p><%= @job[:full_content]%></p> 
+  </div>
+<% end %>
+

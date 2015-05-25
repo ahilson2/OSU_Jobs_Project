@@ -1,0 +1,21 @@
+<div class="note_top_padding"></div>
+<div class="container job_item">
+  <h2>Create an Account</h2>
+
+  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= f.error_notification %>
+
+    <div class="form-inputs container">
+      <%= f.input :email, required: true, autofocus: true %>
+      <br>
+      <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @validatable) %>
+      <br>
+      <%= f.input :password_confirmation, required: true %>
+    </div>
+
+    <div class="form-actions top_pad">
+      <%= f.button :submit, "Sign up" %>
+    </div>
+  <% end %>
+  <div class="top_pad job_item"></div>
+</div>

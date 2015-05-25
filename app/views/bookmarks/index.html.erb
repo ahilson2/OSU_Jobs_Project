@@ -1,0 +1,20 @@
+<div class="container digg_pagination">
+  <div class="page_pad"><%= will_paginate @bookmarks %></div>
+</div>
+
+<% @bookmarks.each do |b| %>
+  <br>
+  <div class="container job_item">
+    <strong class="right top_pad"><%= link_to 'Remove Bookmark', bookmark_path(b), method: :delete, data:{confirm: 'Are you sure that you want to remove this bookmark?'} %></strong>     
+    <h5><strong>Job Title:</strong>&nbsp<%= b.title %></h5>
+    <h5><strong>Department:</strong>&nbsp<%= b.department %></h5>
+    <h5><strong>Published:</strong><%= set_date(b.published) %></h5>
+    <h5><strong>Updated:</strong><%= set_date(b.updated) %></h5>
+    <h5><strong>Discription:</strong></h5><p><%= b.content %></p>
+  </div>
+<% end %>
+
+<div class="container digg_pagination">
+  <div class="page_pad"><%= will_paginate @jobs %></div>
+</div>
+<br><br>

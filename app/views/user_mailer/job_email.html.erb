@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h4>Hello <%= @email_address %>, we have some jobs that you might be interested in!</h4>
+    <h5>Here is a list of the jobs that we found for you:</h5>
+    <% @job_list.each do |j| %>
+      <p>Job Title: <%= j[1]%></p>
+      <p>Posting Department: <%= j[2]%></p>
+      <p>Requisition Number: <%= j[0]%></p>
+      <br>
+    <% end %>
+    <p><%= link_to 'Please login to see the full job discriptions.', @url %></p>
+    <p>Thanks have a great day!</p>
+  </body>
+</html>

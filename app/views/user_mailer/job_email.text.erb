@@ -1,0 +1,11 @@
+Hello <%= @email_address %>, we have some jobs that you might be interested in! 
+===============================================
+ 
+<% @job_list.each do |j| %>
+  Job Title: <%= j[1]%>
+  Posting Department: <%= j[2]%>
+  Requisition Number: <%= j[0]%>
+
+<% end %>
+<%= link_to 'Please login to see the full job discriptions.', @url %>
+Thanks have a great day!

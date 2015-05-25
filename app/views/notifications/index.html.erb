@@ -1,0 +1,19 @@
+<div id="nav_bar" class="container">
+  <hr>
+  <div class="nav_btn">
+    <%= button_to 'Set Notification Parameters', new_notification_path, method: :get %>
+  </div>  
+</div>
+
+<h3 class=" container note_top_padding" >Send emails to <%= current_user.try(:email) %> that fit these parameters:</h3>
+<% @notifications.each do |n| %>
+  <div class="container job_item">
+    <strong class="right top_pad">
+      <%= link_to 'Remove Notification', notification_path(n), method: :delete,data:{confirm: 'Are you sure that you want to remove these email notification parameters?'} %>
+    </strong>
+    <h5><strong>Job Title:</strong><%= n.try(:job_title) %></h5>
+    <h5><strong>Posting Department:</strong><%= n.try(:department)%></h5>
+  </div>
+  <br>
+<% end %>
+
