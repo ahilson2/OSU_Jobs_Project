@@ -50,12 +50,15 @@ Design:
 
 Controllers:
 
-1) jobs_controller : Handles retreving the job listings from 
-https://www.jobsatosu.com/all_jobs.atom and showing each job.
+1) jobs_controller : Handles showing the jobs to the user.
 
 2) bookmarks_controller : Manages the users bookmarked jobs.
 
 3) notifications_controller : Manages the users emails notifications.
+
+4) application_controller : Has two methods, one that returns the current
+users user_id and the second method consumes the jobs that are listed at
+https://www.jobsatosu.com/all_jobs.atom and returns a hash of these jobs.
 
 Models:
 
