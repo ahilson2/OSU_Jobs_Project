@@ -58,8 +58,7 @@ class JobsController < ApplicationController
       @jobs = Job.sort(data)
     end
     @job_count = @jobs.size
-    @jobs = @jobs.paginate(:page => params[:page], :per_page => 10)
-    @page_num = params[:page]    
+    @jobs = @jobs.paginate(:page => params[:page], :per_page => 10)   
   end
 
   def home_page
